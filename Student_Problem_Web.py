@@ -70,7 +70,7 @@ if uploaded_file is not None:
 
         if len(invalid_cols) > 0:
             # エラーメッセージを表示してプログラムを終了
-            st.error(f"次のカラム名が存在しません。ファイルを確認してください: {', '.join(invalid_cols)}")
+            st.error(f"次のカラムが存在しません。ファイルを確認してください: {', '.join(invalid_cols)}")
             # 以降の処理をスキップ
             st.stop()
       
